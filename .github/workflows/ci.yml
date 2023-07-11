@@ -12,13 +12,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
-      # - name: Create Github Tag
-      #   run: |
-      #     git config --global user.email "pakrasideepsa@gmail.com"
-      #     git config --global user.name "DPakrasi"
-      #     git tag -a "2.0.0" -m "Creating tag 2.0.0"
-      #     git push origin "2.0.0"
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: 2.0.0
+          tag_name: 3.0.0
