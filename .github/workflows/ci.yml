@@ -10,12 +10,12 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
-      # - name: Create Github Tag
-      #   run: |
-      #     git config --global user.email "pakrasideepsa@gmail.com"
-      #     git config --global user.name "DPakrasi"
-      #     git tag -a "1.0.0" -m "Creating tag 1.0.0"
-      #     git push origin "1.0.0"
+      - name: Create Github Tag
+        run: |
+          git config --global user.email "pakrasideepsa@gmail.com"
+          git config --global user.name "DPakrasi"
+          git tag -a "1.0.0" -m "Creating tag 1.0.0"
+          git push origin "1.0.0"
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
